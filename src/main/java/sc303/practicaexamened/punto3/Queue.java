@@ -4,14 +4,14 @@
  */
 package sc303.practicaexamened.punto3;
 
-import sc303.practicaexamened.punto2.Node 
 
 public class Queue <Palco>{
     private Node head;
     private Node end;
     
     public void enqueue(Palco value){
-        Node<Palco> newNode = new Node<Palco>(value);
+        Node newNode;
+        newNode = new Node;
         if(head == null){
             head = newNode;
             end= newNode;
@@ -27,6 +27,17 @@ public class Queue <Palco>{
         Queue co01=new Queue();
         
         Node x = new Node ();
-        x.getPersona();
+        x.getIngreso();
     
+    }
+    public boolean estaVacia(){
+        boolean cola = false;
+        if (this.head == null && this.end == null){
+            cola = true;
+        }else {
+            cola=false;
+        }
+        return cola;
+    }
+        
 }
